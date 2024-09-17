@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CurriculoComponent implements OnInit {
 
+  public value = 0;
+
   constructor() { }
 
   ngOnInit() {
