@@ -1,0 +1,67 @@
+<div class="background-page">
+    <nav class="navbar">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 center">
+            <a class="link-home" href="#">
+               {{ '&lt;JV /&gt;' }}
+            </a>
+        </div>
+        <div class="col-md-8 col-lg-8 center" >
+            <div *ngFor="let item of navbarItems;let i = index">
+                <a class="link-section" [href]="item.href">
+                    <span class="number-section text-jetbrains">{{'0' + (i + 1)}}.</span>
+                    <span class="label-section text-jetbrains">{{item.label}}</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum iure repellendus odio, dolorum natus ducimus vitae molestiae numquam magni ipsa mollitia rem nihil deserunt similique omnis enim. Ut, hic aspernatur!</span>
+    </section>
+    <section id="about-me">
+
+    </section>
+    <section id="skills">
+        
+    </section>
+    <section id="experience">
+        
+    </section>
+    <section id="contact">
+        <div class="center">
+            <span class="text-jetbrains color-green" style="font-size: 14px;">
+                05. E agora?
+            </span>
+        </div>
+        <div class="center pad-top color-white">
+            <h2>Vamos Conversar</h2>
+        </div>
+        <div class="center">
+            <p class="text-gray text-contact" style="font-size: 20px;">
+                Estou sempre aberto a novas oportunidades e projetos interessantes. Se você quer trocar uma ideia, minha caixa de entrada está sempre aberta!
+            </p>
+        </div>
+        <div class="center">
+            <button type="button" class="btn btn-send">
+                <span class="color-green">
+                    Dizer Olá
+                </span>
+            </button>
+        </div>
+        <div class="center">
+            <button type="button" class="btn">
+                Git
+            </button>
+            <button type="button" class="btn">
+                Linkedin
+            </button>
+            <button type="button" class="btn">
+                E-mail
+            </button>
+        </div>
+    </section>
+    <footer class="footer info-developed text-jetbrains">
+        <p>
+            Feito por João Vitor de Oliveira - 2026
+        </p>
+    </footer>
+</div>
