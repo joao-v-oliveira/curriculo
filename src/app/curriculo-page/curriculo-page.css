@@ -56,8 +56,24 @@
 }
 
 #contact{
-    padding: 20px;
+    padding: 40px 0;
     background-color: #0e1015;
+}
+
+.btn-contact-link.git:hover svg path, 
+.btn-contact-link.linkedin:hover svg path,
+.btn-contact-link.email:hover svg path{
+    stroke: #2cddcb;
+}
+
+.btn-contact-link img,
+.btn-contact-link svg {
+    transition: transform 0.3s ease;
+}
+
+.btn-contact-link:hover img,
+.btn-contact-link:hover svg {
+    transform: translateY(-5px);
 }
 
 .btn-send{
