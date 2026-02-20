@@ -18,13 +18,43 @@
         <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum iure repellendus odio, dolorum natus ducimus vitae molestiae numquam magni ipsa mollitia rem nihil deserunt similique omnis enim. Ut, hic aspernatur!</span>
     </section>
     <section id="about-me">
-
+        <div class="row" style="margin: 0;padding: 0;">
+            <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-8 d-flex">
+                <span class="number color-green text-jetbrains">01.</span>
+                &nbsp;&nbsp;
+                <h2 class="title text-jetbrains font-24">Sobre mim</h2>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <hr>
+            </div>
+            <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
+        </div>
     </section>
     <section id="skills">
-        
+        <div class="row" style="margin: 0;padding: 0;">
+            <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-8 d-flex">
+                <span class="number color-green text-jetbrains">02.</span>
+                &nbsp;&nbsp;
+                <h2 class="title text-jetbrains font-24">Habilidades</h2>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <hr>
+            </div>
+            <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
+        </div>
     </section>
     <section id="experience">
-        
+        <div class="row" style="margin: 0;padding: 0;">
+            <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-8 d-flex">
+                <span class="number color-green text-jetbrains">03.</span>
+                &nbsp;&nbsp;
+                <h2 class="title text-jetbrains font-24">Experiência</h2>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <hr>
+            </div>
+            <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
+        </div>
     </section>
     <section id="contact">
         <div class="center">
@@ -39,16 +69,20 @@
             <p class="text-gray text-contact" style="font-size: 20px;">
                 Estou sempre aberto a novas oportunidades e projetos interessantes. Se você quer trocar uma ideia, minha caixa de entrada está sempre aberta!
             </p>
-        </div>
+        </div> 
         <div class="center">
-            <button type="button" class="btn btn-send">
+            <button type="button" class="btn btn-send" (click)="openLink('whatsapp')">
+                <svg width="25" height="24" viewBox="2 1 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9271 10.9315C11.464 11.8027 12.1974 12.536 13.0685 13.0729L13.8904 12.5798C14.2488 12.3647 14.7032 12.3953 15.0296 12.6564L16.6247 13.9325C16.848 14.1111 16.9841 14.3768 16.9987 14.6623C17.0133 14.9479 16.905 15.226 16.7011 15.4265L15.98 16.1355C14.9867 17.115 13.4494 17.2808 12.2701 16.5358C10.3464 15.2916 8.70848 13.6536 7.46427 11.73C6.7192 10.5506 6.88507 9.01332 7.86457 8.02002L8.57357 7.29891C8.77403 7.09503 9.05218 6.9867 9.33772 7.00131C9.62327 7.01591 9.88891 7.15205 10.0675 7.37532L11.3436 8.97044C11.6047 9.29684 11.6353 9.7512 11.4202 10.1096L10.9271 10.9315Z" stroke="#2cddcb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.86748 19.9865L4.17048 20.4372C4.0023 20.4653 3.83091 20.4104 3.71035 20.2898C3.58978 20.1692 3.53489 19.9978 3.56298 19.8296L4.01358 17.1325C1.38189 13.0424 2.25733 7.62611 6.04355 4.57331C9.82977 1.52052 15.3085 1.81347 18.7476 5.25261C22.1867 8.69175 22.4796 14.1705 19.4267 17.9567C16.3739 21.7428 10.9576 22.6182 6.86748 19.9865Z" stroke="#2cddcb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
                 <span class="color-green">
                     Dizer Olá
                 </span>
             </button>
         </div>
         <div class="center" style="padding-top: 30px;">
-            <button type="button" class="btn btn-contact-link git">
+            <button type="button" class="btn btn-contact-link git" (click)="openLink('github')">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.05184 15.444C6.10518 15.1297 3.90095 12.5939 4.00001 9.63219C4.01685 8.5396 4.4135 7.48694 5.12187 6.65492L5.19401 3.97409C5.20264 3.65308 5.36491 3.35575 5.63021 3.17482C5.89551 2.99389 6.23156 2.95137 6.53357 3.06053L9.41101 4.10058C11.111 3.6767 12.8892 3.67718 14.589 4.10196L17.4665 3.06196C17.7685 2.9528 18.1045 2.99532 18.3698 3.17625C18.6351 3.35717 18.7974 3.6545 18.806 3.97551L18.8781 6.65496C19.5859 7.4873 19.9825 8.53973 20 9.63219C20.0991 12.5939 17.8948 15.1297 14.9482 15.4439" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M8.05185 20.9997V18.8655C8.07876 17.6567 8.42367 16.4764 9.05185 15.4434" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -56,7 +90,7 @@
                     <path d="M3 16.5654C3 18.2223 4.34315 19.5654 6 19.5654H8.05183" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>                
             </button>
-            <button type="button" class="btn btn-contact-link linkedin">
+            <button type="button" class="btn btn-contact-link linkedin" (click)="openLink('linkedin')">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 3H16.504C18.987 3 21 5.013 21 7.496V16.505C21 18.987 18.987 21 16.504 21H7.496C5.013 21 3 18.987 3 16.504V7.5C3 5.015 5.015 3 7.5 3V3Z" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M8.12 11.0996V16.4996" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -64,7 +98,7 @@
                     <path d="M8.118 7.83848C7.994 7.83848 7.893 7.93948 7.894 8.06348C7.894 8.18748 7.995 8.28848 8.119 8.28848C8.243 8.28848 8.344 8.18748 8.344 8.06348C8.344 7.93848 8.243 7.83848 8.118 7.83848" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>                
             </button>
-            <button type="button" class="btn btn-contact-link email">
+            <button type="button" class="btn btn-contact-link email" (click)="openLink('email')">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M15.374 12.718L19.88 9.663C20.581 9.189 21 8.398 21 7.552V7.552C21 6.142 19.858 5 18.449 5H5.56601C4.15701 5 3.01501 6.142 3.01501 7.551V7.551C3.01501 8.397 3.43401 9.188 4.13501 9.663L8.64101 12.718C10.674 14.096 13.341 14.096 15.374 12.718V12.718Z" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M3 7.55078V16.9998C3 18.6568 4.343 19.9998 6 19.9998H18C19.657 19.9998 21 18.6568 21 16.9998V7.55178" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
