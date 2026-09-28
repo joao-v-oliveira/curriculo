@@ -52,7 +52,126 @@
 
 #home{
     background-color: #0e1015;
-    opacity: 0.9;
+    opacity: 0.96;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    padding: 40px 0 60px;
+}
+
+.hero-row{
+    width: 100%;
+}
+
+.hero-inner{
+    align-items: center;
+}
+
+.hero-greeting{
+    font-size: 16px;
+    margin: 0 0 16px;
+    border: none;
+    padding: 0;
+}
+
+.hero-name{
+    font-size: clamp(36px, 6vw, 56px);
+    font-weight: 700;
+    margin: 0 0 8px;
+    line-height: 1.1;
+}
+
+.hero-role{
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+
+.hero-bio{
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 540px;
+    margin: 0 0 28px;
+}
+
+.hero-actions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.btn-hero{
+    padding: 12px 24px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-hero-outline{
+    color: #2cddcb;
+    border: 1px solid #2cddcb;
+    background: transparent;
+    box-shadow:
+        0 0 6px rgba(44, 221, 203, 0.1),
+        0 0 12px rgba(44, 221, 203, 0.1);
+}
+
+.btn-hero-outline:hover{
+    background: rgba(44, 221, 203, 0.15);
+    color: #2cddcb;
+}
+
+.btn-hero-fill{
+    color: #0e1015;
+    border: 1px solid #2cddcb;
+    background: #2cddcb;
+}
+
+.btn-hero-fill:hover{
+    background: rgba(44, 221, 203, 0.85);
+    color: #0e1015;
+}
+
+.hero-code-wrap{
+    margin-top: 40px;
+}
+
+.code-card{
+    margin: 0;
+    padding: 24px;
+    background-color: #101318;
+    border: 1px solid #23282f;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #6E7D91;
+    overflow-x: auto;
+    box-shadow: 0 0px 25px rgba(44, 221, 203, 0.3);
+}
+
+.code-card code{
+    color: inherit;
+}
+
+.code-keyword{
+    color: #2cddcb;
+}
+
+.code-property{
+    color: #FFF;
+}
+
+.code-string{
+    color: #a8dadc;
+}
+
+.code-bool{
+    color: #f4a261;
+}
+
+.code-number{
+    color: #2cddcb;
 }
 
 #about-me {
@@ -68,6 +187,109 @@
 #experience {
     padding: 40px 0;
     background-color: #0e1015;
+}
+
+.section-body{
+    padding-top: 24px;
+}
+
+.about-paragraph{
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.about-highlights{
+    list-style: none;
+    padding: 16px 0 0;
+    margin: 0;
+}
+
+.about-highlight{
+    font-size: 16px;
+    line-height: 1.8;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.about-highlight-icon{
+    flex-shrink: 0;
+}
+
+.skill-group{
+    margin-bottom: 28px;
+}
+
+.skill-group:last-child{
+    margin-bottom: 0;
+}
+
+.skill-category-title{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 14px;
+}
+
+.skill-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag{
+    font-size: 13px;
+    color: #6E7D91;
+    padding: 8px 14px;
+    border: 1px solid #23282f;
+    border-radius: 4px;
+    background-color: rgba(16, 19, 24, 0.6);
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+#skills .skill-tag{
+    background-color: #0e1015;
+}
+
+.skill-tag:hover{
+    border-color: #2cddcb;
+    color: #2cddcb;
+}
+
+.experience-item{
+    padding-bottom: 36px;
+    margin-bottom: 36px;
+    border-bottom: 1px solid #23282f;
+}
+
+.experience-item:last-child{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.experience-period{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.experience-role{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 6px;
+    white-space: normal;
+}
+
+.experience-company{
+    font-size: 15px;
+    margin: 0 0 12px;
+}
+
+.experience-description{
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 0 16px;
 }
 
 .font-24{
@@ -177,8 +399,23 @@ h2 {
     white-space: nowrap;
 }
 
+.experience-role,
+.hero-name {
+    white-space: normal;
+}
+
 @media (min-width: 900px) {
     .divWeb {
         display: block;
+    }
+
+    .hero-code-wrap{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 899px) {
+    .text-contact{
+        width: 90vw;
     }
 }

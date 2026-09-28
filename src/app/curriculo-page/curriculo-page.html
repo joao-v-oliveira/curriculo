@@ -1,7 +1,7 @@
 <div class="background-page">
     <nav class="navbar">
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 center">
-            <a class="link-home" href="#">
+            <a class="link-home text-jetbrains" href="#home">
                {{ '&lt;JV /&gt;' }}
             </a>
         </div>
@@ -15,7 +15,37 @@
         </div>
     </nav>
     <section id="home">
-        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum iure repellendus odio, dolorum natus ducimus vitae molestiae numquam magni ipsa mollitia rem nihil deserunt similique omnis enim. Ut, hic aspernatur!</span>
+        <div class="row hero-row" style="margin: 0;padding: 0;">
+            <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
+            <div class="col-12 col-sm-10 col-md-10 col-lg-8">
+                <div class="row hero-inner">
+                    <div class="col-12 col-lg-7 hero-text">
+                        <blockquote class="hero-greeting text-jetbrains color-green">
+                            &gt; {{ hero.greeting }}
+                        </blockquote>
+                        <h1 class="hero-name color-white">{{ hero.name }}</h1>
+                        <h2 class="hero-role text-gray text-jetbrains">{{ hero.role }}</h2>
+                        <p class="hero-bio text-gray">{{ hero.bio }}</p>
+                        <div class="hero-actions">
+                            <a class="btn btn-hero btn-hero-outline text-jetbrains" href="#experience">
+                                Ver Experiência
+                            </a>
+                            <a class="btn btn-hero btn-hero-fill text-jetbrains" href="#contact">
+                                Entrar em Contato
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 hero-code-wrap">
+                        <pre class="code-card text-jetbrains"><code><span class="code-keyword">const</span> {{ codeSnippet.varName }} = &#123;
+  <span class="code-property">nome</span>: <span class="code-string">"{{ codeSnippet.nome }}"</span>,
+  <span class="code-property">café</span>: <span class="code-bool">{{ codeSnippet.cafe }}</span>,
+  <span class="code-property">código</span>: <span class="code-number">{{ codeSnippet.codigo }}</span>
+&#125;;</code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
+        </div>
     </section>
     <section id="about-me">
         <div class="row" style="margin: 0;padding: 0;">
@@ -26,6 +56,21 @@
                 <h2 class="title text-jetbrains font-24">Sobre mim</h2>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <hr>
+            </div>
+            <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
+        </div>
+        <div class="row section-body" style="margin: 0;padding: 0;">
+            <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-8">
+                <p *ngFor="let paragraph of aboutParagraphs" class="about-paragraph text-gray">
+                    {{ paragraph }}
+                </p>
+                <ul class="about-highlights">
+                    <li *ngFor="let item of aboutHighlights" class="about-highlight text-gray">
+                        <span class="about-highlight-icon">{{ item.icon }}</span>
+                        {{ item.text }}
+                    </li>
+                </ul>
             </div>
             <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
         </div>
@@ -42,6 +87,22 @@
             </div>
             <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
         </div>
+        <div class="row section-body" style="margin: 0;padding: 0;">
+            <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-8">
+                <div *ngFor="let category of skillCategories" class="skill-group">
+                    <h3 class="skill-category-title text-jetbrains color-green">
+                        // {{ category.title }}
+                    </h3>
+                    <div class="skill-tags">
+                        <span *ngFor="let skill of category.items" class="skill-tag text-jetbrains">
+                            {{ skill }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
+        </div>
     </section>
     <section id="experience">
         <div class="row" style="margin: 0;padding: 0;">
@@ -52,6 +113,23 @@
                 <h2 class="title text-jetbrains font-24">Experiência</h2>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <hr>
+            </div>
+            <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
+        </div>
+        <div class="row section-body" style="margin: 0;padding: 0;">
+            <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-8">
+                <article *ngFor="let job of experiences" class="experience-item">
+                    <span class="experience-period text-jetbrains color-green">{{ job.period }}</span>
+                    <h3 class="experience-role color-white">{{ job.role }}</h3>
+                    <p class="experience-company text-jetbrains text-gray">@ {{ job.company }}</p>
+                    <p class="experience-description text-gray">{{ job.description }}</p>
+                    <div class="skill-tags">
+                        <span *ngFor="let tag of job.tags" class="skill-tag text-jetbrains">
+                            {{ tag }}
+                        </span>
+                    </div>
+                </article>
             </div>
             <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
         </div>
