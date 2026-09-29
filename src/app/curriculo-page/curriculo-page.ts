@@ -91,7 +91,17 @@ export class CurriculoPage {
     },
   ];
 
+  public menuOpen = false;
+
   constructor() {}
+
+  public toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  public closeMenu(): void {
+    this.menuOpen = false;
+  }
 
   public openLink(value: string) {
     switch (value) {
