@@ -48,7 +48,7 @@
         </div>
     </section>
     <section id="about-me">
-        <div class="row" style="margin: 0;padding: 0;">
+        <div class="row" style="margin: 0;padding: 0 0 15px 0;">
             <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
             <div class="col-12 col-sm-8 col-md-6 col-lg-8 d-flex">
                 <span class="number color-green text-jetbrains">01.</span>
@@ -62,21 +62,27 @@
         <div class="row section-body" style="margin: 0;padding: 0;">
             <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
             <div class="col-12 col-sm-8 col-md-6 col-lg-8">
-                <p *ngFor="let paragraph of aboutParagraphs" class="about-paragraph text-gray">
-                    {{ paragraph }}
-                </p>
-                <ul class="about-highlights">
-                    <li *ngFor="let item of aboutHighlights" class="about-highlight text-gray">
-                        <span class="about-highlight-icon">{{ item.icon }}</span>
-                        {{ item.text }}
-                    </li>
-                </ul>
+                <div class="row">
+                    <div class="col-12 col-sm-7 col-md-6 col-lg-7">
+                        <p *ngFor="let paragraph of aboutParagraphs" class="about-paragraph text-gray">
+                            {{ paragraph }}
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-5 col-md-6 col-lg-5">
+                        <ul class="about-highlights">
+                            <li *ngFor="let item of aboutHighlights" class="about-highlight text-gray">
+                                <span class="about-highlight-icon">{{ item.icon }}</span>
+                                {{ item.text }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
         </div>
     </section>
     <section id="skills">
-        <div class="row" style="margin: 0;padding: 0;">
+        <div class="row" style="margin: 0;padding: 0 0 15px 0;">
             <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
             <div class="col-12 col-sm-8 col-md-6 col-lg-8 d-flex">
                 <span class="number color-green text-jetbrains">02.</span>
@@ -105,7 +111,7 @@
         </div>
     </section>
     <section id="experience">
-        <div class="row" style="margin: 0;padding: 0;">
+        <div class="row" style="margin: 0;padding: 0 0 15px 0;">
             <div class="col-12 col-sm-1 col-md-1 col-lg-2 divWeb"></div>
             <div class="col-12 col-sm-8 col-md-6 col-lg-8 d-flex">
                 <span class="number color-green text-jetbrains">03.</span>

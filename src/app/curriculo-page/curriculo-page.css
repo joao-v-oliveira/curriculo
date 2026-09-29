@@ -140,7 +140,8 @@
 .code-card{
     margin: 0;
     padding: 24px;
-    background-color: #101318;
+    background: #101318 !important;
+  opacity: 1 !important;
     border: 1px solid #23282f;
     border-radius: 8px;
     font-size: 14px;
@@ -148,6 +149,8 @@
     color: #6E7D91;
     overflow-x: auto;
     box-shadow: 0 0px 25px rgba(44, 221, 203, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .code-card code{
