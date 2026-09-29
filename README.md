@@ -1,27 +1,60 @@
-# Curriculo
+# Currículo — João Vitor
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.29.
+Projeto desenvolvido para disponibilizar meu currículo de forma online, com uma interface responsiva e foco em organização, usabilidade e apresentação das informações profissionais.
 
-## Development server
+## Tecnologias utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* **Angular**
+* **TypeScript**
+* **HTML5**
+* **CSS3**
+* **Bootstrap**
+* **JavaScript**
 
-## Code scaffolding
+## Desenvolvimento
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+O projeto foi desenvolvido utilizando Angular, com a aplicação estruturada em componentes e estilização personalizada em CSS.
+
+A interface foi construída de forma responsiva, buscando proporcionar uma boa experiência de navegação em diferentes tamanhos de tela, como computadores, tablets e dispositivos móveis.
+
+## Observações
+
+* Projeto desenvolvido com finalidade de apresentação profissional.
+* Interface responsiva e adaptada para diferentes dispositivos.
+* Código organizado utilizando a estrutura de componentes do Angular.
+* Estilos personalizados para manter a identidade visual do projeto.
+* As informações apresentadas podem ser atualizadas diretamente no código da aplicação.
+
+## Execução local
+
+Para executar o projeto localmente, é necessário ter o **Node.js** e o **Angular CLI** instalados.
+
+```bash
+npm install
+```
+
+Depois de instalar as dependências:
+
+```bash
+ng serve
+```
+
+A aplicação ficará disponível em:
+
+```text
+http://localhost:4200
+```
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Para gerar a versão de produção:
 
-## Running unit tests
+```bash
+ng build
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Os arquivos gerados estarão no diretório de build configurado pelo Angular.
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Desenvolvido por **João Vitor**.
